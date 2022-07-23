@@ -33,6 +33,9 @@ function displayTime() {
         document.querySelector(".clock-dash-bk1").setAttribute('class', 'dark-clock-dash-bk1');
         document.querySelector(".clock-dash-bk2").setAttribute('class', 'dark-clock-dash-bk2');
         document.querySelector(".img-platform").setAttribute('class', 'dark-img-platform');
+        document.querySelector(".wrapper").setAttribute('class', 'dark-wrapper');
+        document.querySelector("h1").setAttribute('class', 'dark-wrap-content');
+
 
         document.getElementById('text1').innerHTML = "<h1>CLOSE YOUR EYES AND GET SOME SLEEP !!!</h1>";
         document.getElementById('text').innerHTML = "<h1>GOOD NIGHT!!🌟🎆🎇</h1>";
@@ -160,6 +163,9 @@ function dark(){
     document.querySelector(".clock-dash-bk1").setAttribute('class', 'dark-clock-dash-bk1');
     document.querySelector(".clock-dash-bk2").setAttribute('class', 'dark-clock-dash-bk2');
     document.querySelector(".img-platform").setAttribute('class', 'dark-img-platform');
+    document.querySelector(".wrapper").setAttribute('class', 'dark-wrapper');
+    document.querySelector("h1").setAttribute('class', 'dark-wrap-content');
+
 };
 
 
@@ -171,33 +177,35 @@ let btnC = () =>{
     var AfternoonTimeText = afternoon.options[afternoon.selectedIndex].text;
     var EveningTimeText = evening.options[evening.selectedIndex].text;
     var NightTimeText = night.options[night.selectedIndex].text;
-    console.log(NightTimeText);
+    // console.log(NightTimeText);
 
     var MorningTimeValue = morning.options[morning.selectedIndex].value;
     var AfternoonTimeValue = afternoon.options[afternoon.selectedIndex].value;
     var EveningTimeValue = evening.options[evening.selectedIndex].value;
     var NightTimeValue = night.options[night.selectedIndex].value;
-    console.log(NightTimeValue);
+    // console.log(NightTimeValue);
 
-    console.log(MorningTimeValue == timehours);
+    console.log(MorningTimeValue == MorningTimeText);
     console.log(MorningTimeValue);
-    console.log(timehours);
+    console.log(MorningTimeText);
 
-    console.log(NightTimeValue == timehours);
+    console.log(NightTimeValue == NightTimeText);
     console.log(NightTimeValue);
-    console.log(timehours);
+    console.log(NightTimeText);
 
-    if (MorningTimeValue == timehours){
+    if ((MorningTimeValue > 8 && MorningTimeValue < 12)){
         document.getElementById('text1').innerHTML = "<h1>GRAB SOME HEALTHY BREAKFAST !!!</h1>";
-    } else if (AfternoonTimeValue == timehours){
-        document.getElementById('text1').innerHTML = "<h1>LET'S HAVE SOME LUNCH !!!</h1>";
-    } else if (EveningTimeText == timehours){
-        document.getElementById('text1').innerHTML = "<h1>STOP YAWNING, GET SOME TEA.. IT'S JUST EVENING !!!</h1>";
-    } else if (NightTimeValue == timehours){
-        document.getElementById('text1').innerHTML = "<h1>CLOSE YOUR EYES AND GET SOME SLEEP !!!</h1>";
-    }else{
-        console.log('LOL');
-    }
+        document.getElementById('text').innerHTML = "<h1>Good Morning</h1>";
+    } 
+    // else if (hrs >= 0 && hrs < 6){
+        // document.getElementById('text1').innerHTML = "<h1>LET'S HAVE SOME LUNCH !!!</h1>";
+    // } else if (EveningTimeText == timehours){
+        // document.getElementById('text1').innerHTML = "<h1>STOP YAWNING, GET SOME TEA.. IT'S JUST EVENING !!!</h1>";
+    // } else if (NightTimeValue == timehours){
+        // document.getElementById('text1').innerHTML = "<h1>CLOSE YOUR EYES AND GET SOME SLEEP !!!</h1>";
+    // }else{
+        // console.log('LOL');
+    // }
 
 
 
@@ -205,9 +213,9 @@ let btnC = () =>{
     document.getElementById("LunchT").innerText = AfternoonTimeText;
     document.getElementById("NapT").innerText = EveningTimeText;
     document.getElementById("NightT").innerText = NightTimeText;
-    console.log(check);
+    // console.log(check);
 }
-btnC();
+// btnC();
 
 let btn = document.querySelector(".btn");
 
