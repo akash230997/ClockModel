@@ -1,0 +1,355 @@
+body{
+    /* background-color: rgb(103, 100, 99); */
+    margin: 0%;
+    padding: 0%;
+}
+.wrap-content h1{
+    display: inline-block;
+    font-size: 5rem;
+    margin: 0%;
+    position: absolute;
+    top: 150px;
+    /* border: 1px solid #000; */
+    /* writing-mode: sideways-lr; */
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);  
+}
+
+
+#wrapper{
+    background-color: rgba(128, 128, 128, 0.351);
+    padding-top: 40px;
+    height: 100vh;
+}
+
+.container{
+    width: 80%;
+    min-height: 730px;
+    /* background-color: #3D087B; */
+    background: var(--unnamed-color-3d087b) 0% 0% no-repeat padding-box;
+    background: #5a2795 0% 0% no-repeat padding-box;
+    margin: 0px auto 0px;
+    box-shadow: 2px 2px #cc52f8a0;
+    padding: 50px;
+    border-radius: 30px;
+}
+.dark{
+    background-color: rgba(0, 0, 0, 0.658);
+    width: 80%;
+    min-height: 730px;
+    margin: 40px auto 0px;
+    box-shadow: 2px 2px #cc52f8a0;
+    padding: 50px;
+    border-radius: 30px;
+}
+.right{
+    width: 49%;
+    height: 650px;
+    /* border: 2px solid yellow; */
+    display: inline-block;
+}
+.left{
+    width: 50%;
+    height: 600px;
+    /* border: 2px solid green; */
+    display: inline-block;
+    float: right;
+}
+.clock-logo{
+    width: 35%;
+    height: 80px;
+    /* border: 2px solid green; */
+    margin-left: 20px;
+}
+.dark-clock-setTime{
+    color: white;
+    background-color: #06283D;
+    width: 90%;
+    height: 400px;
+    border: 5px solid #000;
+    box-shadow: 5px 5px 3px rgba(16, 16, 175, 0.187);
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.clock-setTime{
+    background-color: white;
+    width: 90%;
+    height: 400px;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.innerbox{
+    /* border: 1px solid #000; */
+    width: 100%;
+    min-height: 240px;
+}
+
+.timeline-status{
+    /* background-color: white; */
+    width: 90%;
+    height: 80px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 20px auto;
+    background-color: rgba(128, 128, 128, 0.403);
+    color: white;
+    padding-top: 20px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.timeline-status h1{
+    font: normal normal 900 27px/4px Bauhaus Hv BT;
+}
+.btn{
+    color: white;
+    width: 37%;
+    padding: 15px;
+    margin-left: 30px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    background: transparent linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #ee7ca9 100%) 0% 0% no-repeat padding-box;
+}
+.btn:hover{
+    box-shadow: 5px 5px 2px purple;
+    background: transparent linear-gradient(113deg, #ee7ca9 0%, #FC5EFF 40%, #FC5EFF 81%, #6E54EC 100%) 0% 0% no-repeat padding-box;
+    color: white;
+}
+.time-box{
+    width: 50%;
+    height: 135px;
+    /* border: 1px solid #000; */
+    background-color: rgba(128, 128, 128, 0.403);
+    display: inline-block;
+    float: right;
+    border-radius: 10px;
+    margin-right: 35px;
+    padding: 15px;
+    /* padding-left: 20px; */
+    font-size: 1.2rem;
+    color:#FC5EFF;
+    box-sizing: border-box;
+}
+.written{
+    width: 90%;
+    height: 100px;
+    font-size: 1.4rem;
+    /* border: 1px solid #000; */
+    /* padding: 5px; */
+}
+.clock-dash{
+    width: 90%;
+    height: 100px;
+    /* border: 2px solid black; */
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    margin-left: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.container-clock{
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid #000; */
+}
+.box{
+    width: 13%;
+    height: 85px;
+    /* border: 2px solid grey; */
+    display: inline-block;
+    margin-left: 6%;
+    background-color: #F6E2FF;
+}
+.box1{
+    box-sizing: border-box;
+    font-size: 2rem;
+    color:#5a2795;
+    background-color: white;
+    line-height: 55px;
+    padding: 10px;
+    float: left;
+    border: none;
+    /* margin-left: -20px; */
+}
+.box2{
+    font-size: 3rem;
+    line-height: 85px;
+    color:#5a2795;
+    text-align: center;
+    /* position: relative;
+    top: -15px; */
+}
+.box3{
+    font-size: 3rem;
+    line-height: 85px;
+    color:#5a2795;
+    text-align: center;
+}
+.box4{
+    font-size: 3rem;
+    line-height: 85px;
+    color:#5a2795;
+    text-align: center;
+}
+.box5{
+    box-sizing: border-box;
+    font-size: 3rem;
+    color: #5a2795;
+    line-height: 90px;
+    text-align: center;
+    background: transparent linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #ee7ca9 100%) 0% 0% no-repeat padding-box;
+    float: right;
+    position: relative;
+    top: -85px;
+    height: 85px;
+}
+.dial{
+    color:#5a2795;
+    font-size: 3rem;
+    position: relative;
+    left: 20px;
+    /* top: 10px; */
+}
+.clock-dash-bk1{
+    width: 75%;
+    height: 60px;
+    background: #ffffff5d;
+    border-radius: 10px;
+    margin-top: -45px;
+    margin-left: 12%;
+}
+.dark-clock-dash-bk1{
+    width: 75%;
+    height: 60px;
+    background: #ffffff5d;
+    border-radius: 10px;
+    margin-top: -45px;
+    margin-left: 12%;
+    box-shadow: 3px 3px 5px red;
+}
+.clock-dash-bk2{
+    width: 68%;
+    height: 60px;
+    background: #ffffff30;
+    border-radius: 10px;
+    margin-top: -50px;
+    margin-left: 16%;
+
+}
+.dark-clock-dash-bk2{
+    width: 68%;
+    height: 60px;
+    background: #ffffff30;
+    border-radius: 10px;
+    margin-top: -50px;
+    margin-left: 16%;
+    box-shadow: 3px 3px 5px red;
+}
+.time-line{
+    width: 85%;
+    height: 100px;
+    /* border: px solid #000; */
+    background-color: #F1F1F1;
+    margin-left: 4%;
+    margin-top: 2%;
+    border-radius: 10px;
+    color: #8E53F0;
+    padding: 5px;
+    padding-left: 30px;
+    text-align: left;
+    /* font-size: 1.5rem; */
+    line-height: 30px;
+    font-weight: bolder;
+    /* font: normal normal bolder 1rem/40px Bauhaus Hv BT; */
+}
+.time-line h1{
+    font-size: 2rem;
+    /* float: right; */
+    /* border: 1px solid #000; */
+}
+.img-platform{
+    width: 90%;
+    min-height: 300px;
+    margin-left: 4%;
+    margin-top: 3%;
+    border-radius: 20px;
+}
+.dark-img-platform{
+        width: 90%;
+    min-height: 300px;
+    box-shadow: 3px 3px 5px red;
+    margin-left: 4%;
+    margin-top: 3%;
+    border-radius: 20px;
+}
+
+select{
+    width: 100%;
+    padding: 10px;
+    color: #3D087B;
+    font-size: 1.1rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+
+
+.button {
+    position: fixed;
+    top: 10px;
+    left: 0px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 40px 39px;
+    border: 11px solid #452640;
+    border-radius: 100px;
+    background: #824878;
+    background: -webkit-gradient(linear, left top, left bottom, from(#824878), to(#452640));
+    background: -moz-linear-gradient(top, #824878, #452640);
+    background: linear-gradient(to bottom, #824878, #452640);
+    -webkit-box-shadow: #9c5690 0px 0px 40px 0px;
+    -moz-box-shadow: #9c5690 0px 0px 40px 0px;
+    box-shadow: #9c5690 0px 0px 40px 0px;
+    font: normal normal normal px times new roman;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+    border: 11px solid ##512d4b;
+    background: #9c5690;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9c5690), to(#532e4d));
+    background: -moz-linear-gradient(top, #9c5690, #532e4d);
+    background: linear-gradient(to bottom, #9c5690, #532e4d);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button:active {
+    background: #452640;
+    background: -webkit-gradient(linear, left top, left bottom, from(#452640), to(#452640));
+    background: -moz-linear-gradient(top, #452640, #452640);
+    background: linear-gradient(to bottom, #452640, #452640);
+}
+
+.button:before {
+    content: "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 4px -6px -4px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    /* background: url(../images/toggle.png) no-repeat center center transparent; */
+    
+    background-size: 100% 100%;
+}

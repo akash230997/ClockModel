@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<div id="wrapper">
+    <div class="wrap-content">
+        <h1>CLOCK MODEL</h1>
+        <button class="button" onclick="dark()"></button>
+    </div>
+
+    <div class="container">
+        <div class="right">
+            <div class="clock-logo">
+                <img src="images/clock_logo/clock_logo.png" alt="">
+            </div>
+            <div class="clock-setTime">
+                <div class="innerbox">
+                    <table style="margin-bottom:40px;">
+                        <tr>
+                            <td><img src="images/wake_up/wake_up.png" alt=""></td>
+                            <td style="font-size:1.4rem; width: 250px; padding-left: 20px;">Set Wake Up Time</td>
+                            <td width="58%">
+                                <select class="Select-Box" name="wakes" id="wakeupTime">
+                                    <option value= 8 selected="selected">08AM - 09AM</option>
+                                    <option value= 9 >9AM - 10AM</option>
+                                    <option value= 10 >10AM - 11AM</option>
+                                    <option value= 11 >11AM - 12PM</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table style="margin-bottom:40px;">
+                        <tr>
+                            <td><img src="images/lunch_time/lunch_time.png" alt=""></td>
+                            <td style="font-size:1.4rem; width: 250px; padding-left: 20px;">Set Lunch Time</td>
+                            <td width="58%">
+                                <select class="Select-Box" name="wakes" id="lunchTime">
+                                    <option value= 12 selected="selected">12PM - 1PM</option>
+                                    <option value= 13>01 PM - 02 PM</option>
+                                    <option value= 14>02PM - 03PM</option>
+                                    <option value= 15>03PM - 04PM</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table style="margin-bottom:40px;">
+                        <tr>
+                            <td><img src="images/nap_time/nap_time.png" alt=""></td>
+                            <td style="font-size:1.4rem; width: 250px; padding-left: 20px;">Set Nap Time</td>
+                            <td width="58%">
+                                <select class="Select-Box" name="wakes" id="eveningTime">
+                                    <option value= 16 selected="selected">04PM - 05PM</option>
+                                    <option value= 17>5PM - 06PM</option>
+                                    <option value= 18>06PM - 07PM</option>
+                                    <option value= 19>07PM - 08PM</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table style="margin-bottom:40px;">
+                        <tr>
+                            <td><img src="images/wake_up/wake_up.png" alt=""></td>
+                            <td style="font-size:1.4rem; width: 250px; padding-left: 20px;">Set Night Time</td>
+                            <td width="58%">
+                                <select class="Select-Box" name="wakes" id="sleepTime">
+                                    <option value= 20  selected="selected">08PM - 09PM</option>
+                                    <option value= 21 >09PM - 10PM</option>
+                                    <option value= 22 >10PM - 11 PM</option>
+                                    <option value= 23 >11PM - 12AM</option>
+                                    <option value=  0>12AM - 01AM</option>
+                                    <option value= 1>01AM - 02AM</option>
+                                    <option value= 2>02AM - 03AM</option>
+                                    <option value= 3>03AM - 04AM</option>
+                                    <option value= 4>04AM - 05AM</option>
+                                    <option value= 5>05AM - 06AM</option>
+                                    <option value= 6>06AM - 07AM</option>
+                                    <option value= 7>07AM - 08AM</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+            <div class="timeline-status"id="text">
+                <h1>GOOD MORNING!! WAKE UP</h1>
+            </div>
+            <button type="button" class="btn" onclick="btnC()" >SET ALARM</button>
+            <div class="time-box">
+                <div class="written">
+                    <span>Wake up time : <span id="WakeUpT">Select Time</span><br></span>
+                    <span>Lunch time : <span id="LunchT">Select Time</span><br></span>
+                    <span>Nap time : <span id="NapT">Select Time</span><br></span>
+                    <span>Night time : <span id="NightT">Select Time</span><br></span>
+                </div>
+            </div>
+        </div>
+        <div class="left">
+            <div class="clock-dash">
+                <div class="container-clock">
+                    <div class="box box1">Time</div>
+                    <div class="box box2"id='Hours'></div>
+                    <span class="dial">:</span>
+                    <div class="box box3"id='Minutes'></div>
+                    <span class="dial">:</span>
+                    <div class="box box4"id='Seconds'>00</div>
+                    <div class="box box5"id='session'>AM</div>
+                </div>
+            </div>
+            <div class="clock-dash-bk1"></div>
+            <div class="clock-dash-bk2"></div><br>
+            <div class="time-line" id="text1">
+                <h1>GRAB SOME HEALTHY BREAKFAST!!!</h1>
+            </div>
+            <div class="img-platform">
+                <img src="images/Component 30 – 1/Component 30 – 1.png" id="imagesTarget" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="JavaScript/log.js"></script>
+</body>
+</html>
