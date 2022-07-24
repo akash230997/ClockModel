@@ -36,7 +36,7 @@ body{
 .wrapper{
     background-color: rgba(128, 128, 128, 0.351);
     padding-top: 40px;
-    height: 96\0vh;
+    height: 95vh;
 }
 .dark-wrapper{
     background-color: rgba(0, 0, 0, 0.873);
@@ -142,6 +142,14 @@ body{
     box-shadow: 5px 5px 2px purple;
     background: transparent linear-gradient(113deg, #ee7ca9 0%, #FC5EFF 40%, #FC5EFF 81%, #6E54EC 100%) 0% 0% no-repeat padding-box;
     color: white;
+}
+.btn:hover::before{
+    content: 'PARTY TIME!!';
+    font-size: 1.3rem;
+    color: white;
+}
+.btn:hover .hiddenText{
+    display: none;
 }
 .time-box{
     width: 50%;
