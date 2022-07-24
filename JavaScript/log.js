@@ -22,10 +22,8 @@ function displayTime() {
     } else {
         session.innerHTML = 'AM';
     }
-    
-    document.getElementById('Hours').innerHTML = hrs;
-    document.getElementById('Minutes').innerHTML = mins;
-    document.getElementById('Seconds').innerHTML = secs;
+
+  
 
     if(hrs >= 0 && hrs < 6 ){
         document.querySelector(".container").setAttribute('class', 'dark');
@@ -70,6 +68,11 @@ function displayTime() {
     if (hrs > 12) {
         hrs = hrs - 12
     }
+
+    document.getElementById('Hours').innerHTML = hrs;
+    document.getElementById('Minutes').innerHTML = mins;
+    document.getElementById('Seconds').innerHTML = secs;
+    
     // if (MorningTimeValue == timehours) {
     //     document.getElementById('text1').innerHTML = "<h1>GRAB SOME HEALTHY BREAKFAST !!!</h1>";
     // } else if (AfternoonTimeValue == timehours) {
